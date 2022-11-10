@@ -1,7 +1,8 @@
+@import './base/common';
 @import './base/container';
 @import './base/sections';
 
+@import './layout/header';
+
 @import './utils/varaibles';
 @import './utils/visually-hidden';
-
-@import './layout/header';
