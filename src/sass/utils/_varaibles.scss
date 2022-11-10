@@ -1,0 +1,49 @@
+:root {
+    --main-font: "Open Sans", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --main-color: #555555;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #9DA4BD;
+    --quaternary-color: rgba(157, 164, 189, 0.6);
+    --quinary-color: #303030;
+    --senary-color: #FF6C00;;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
