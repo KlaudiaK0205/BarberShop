@@ -1,0 +1,65 @@
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    color: var(--darkBG-header-color) ;
+    margin-bottom: 200px;
+}
+.logo {
+    margin-left: 55px;
+    margin-right: 60px;
+}
+.navigation .container {
+    margin-top: 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.nav__list {
+    display: flex;
+
+
+}
+
+.nav__item {
+    
+    &:not(:last-child) {
+        padding-right: 55px;
+    }
+
+
+}
+
+.nav__link {
+    transition: ;
+
+    &:hover,
+    :focus {
+        color: var(--brand-color);
+    }
+}
+.phone {
+    // color: var(--darkBG-header-color);
+    margin-left: auto;
+    // padding-right: 40px;
+}
+
+.regBtn {
+    font-size: 12px;
+    width: 160px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    // color: var(--darkBG-header-color);
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+    border-radius: 25px;
+
+}
