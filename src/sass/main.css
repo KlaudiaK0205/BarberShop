@@ -44,15 +44,81 @@ img {
 .link {
   text-decoration: none;
 }
+.link:visited {
+  color: var(--darkBG-header-color);
+}
 
-:root {
-  --font-main: "Open Sans", sans-serif;
-  --font-header: "Raleway", sans-serif;
-  --lightBG-header-color: #303030;
-  --lightBG-title-color: #555555;
-  --darkBG-header-color: #FFF;
-  --darkBG-title-color: #9DA4BD;
-  --brand-color: #FF6C00;
+.section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+@media screen and (min-width: 787px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.main-header,
+.section-header {
+  font-family: var(--font-header);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.main-header {
+  font-size: 72px;
+  color: var(--darkBG-header-color);
+}
+
+.secondary-header {
+  font-family: var(--font-main);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.section-header {
+  font-size: 42px;
+}
+
+.darkTheme {
+  color: var(--darkBG-header-color);
+}
+
+.lightTheme {
+  color: var(--lightBG-header-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.regBtn {
+  font-family: var(--font-main);
+  font-size: 12px;
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.regBtn:hover,
+.regBtn :focus {
+  background-color: var(--brand-color);
+  color: var(--darkBG-header-color);
+  cursor: pointer;
 }
 
 .header .container {
@@ -62,12 +128,11 @@ img {
 
 .header {
   color: var(--darkBG-header-color);
-  margin-bottom: 200px;
 }
 
 .logo {
-  margin-left: 55px;
-  margin-right: 60px;
+  margin-left: 32px;
+  margin-right: 94px;
 }
 
 .navigation .container {
@@ -84,16 +149,20 @@ img {
 }
 
 .nav__item:not(:last-child) {
-  padding-right: 55px;
+  padding-right: 41px;
 }
 
-tran .nav__link:hover,
+.nav__link {
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.nav__link:hover,
 .nav__link :focus {
   color: var(--brand-color);
+  cursor: pointer;
 }
 
 .phone {
-  margin-left: auto;
+  margin-left: 365px;
 }
 
 .regBtn {
@@ -101,8 +170,106 @@ tran .nav__link:hover,
   width: 160px;
   height: 40px;
   margin-left: 40px;
-  margin-right: 20px;
+  margin-right: 55px;
   background-color: transparent;
   border: 1px solid var(--brand-color);
   border-radius: 25px;
+  cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.regBtn:hover,
+.regBtn :focus {
+  background-color: var(--brand-color);
+  color: var(--darkBG-header-color);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__right-side {
+    background-color: var(lightBG-header-color);
+    background-image: url(/src/images/desktop/hero/heroBg1_desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hero__right-side {
+    background-image: url(/src/images/desktop/hero/heroBg1_desktop@2x.jpg);
+  }
+}
+.hero .container {
+  display: flex;
+}
+
+.hero__left-side {
+  width: 10%;
+}
+
+.hero__right-side {
+  width: 1085px;
+  height: 680px;
+}
+
+.hero .secondary-header {
+  padding-top: 184px;
+  color: var(--darkBG-title-color);
+}
+
+.description {
+  width: 363px;
+  color: var(--darkBG-title-color);
+}
+
+.aboutUs {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs__list {
+  display: flex;
+}
+
+.aboutUs__item:first-child {
+  padding-right: 30px;
+}
+.aboutUs__item:last-child {
+  padding-right: 65px;
+}
+
+.aboutUs-right-side {
+  width: 500px;
+  margin-right: 113px;
+}
+
+.aboutUs .secondary-header {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.aboutUs .section-header {
+  font-size: 42px;
+  padding-bottom: 20px;
+}
+
+.undertitle {
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: var(--lightBG-title-color);
+  padding-top: 20;
+  padding-bottom: 20px;
+}
+
+.aboutUs .regBtn {
+  margin: 0;
+  margin-top: 40px;
+}
+
+:root {
+  --font-main: "Open Sans", sans-serif;
+  --font-header: "Raleway", sans-serif;
+  --lightBG-header-color: #303030;
+  --lightBG-title-color: #555555;
+  --darkBG-header-color: #FFF;
+  --darkBG-title-color: #9DA4BD;
+  --brand-color: #FF6C00;
 }/*# sourceMappingURL=main.css.map */

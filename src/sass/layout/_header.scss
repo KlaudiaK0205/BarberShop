@@ -5,11 +5,10 @@
 
 .header {
     color: var(--darkBG-header-color) ;
-    margin-bottom: 200px;
 }
 .logo {
-    margin-left: 55px;
-    margin-right: 60px;
+    margin-left: 32px;
+    margin-right: 94px;
 }
 .navigation .container {
     margin-top: 40px;
@@ -18,37 +17,32 @@
 .nav {
     display: flex;
     align-items: center;
-
-    
 }
 
 .nav__list {
     display: flex;
-
-
 }
 
 .nav__item {
     
     &:not(:last-child) {
-        padding-right: 55px;
+        padding-right: 41px;
     }
-
-
 }
 
 .nav__link {
-    transition: ;
+    // color: var(--darkBG-header-color);
+    transition: cubic-bezier((0.4, 0, 0.2, 1)) 250ms;
 
     &:hover,
     :focus {
         color: var(--brand-color);
+        cursor: pointer;
     }
 }
 .phone {
     // color: var(--darkBG-header-color);
-    margin-left: auto;
-    // padding-right: 40px;
+    margin-left: 365px;
 }
 
 .regBtn {
@@ -56,10 +50,19 @@
     width: 160px;
     height: 40px;
     margin-left: 40px;
-    margin-right: 20px;
+    margin-right: 55px;
     // color: var(--darkBG-header-color);
     background-color: transparent;
     border: 1px solid var(--brand-color);
     border-radius: 25px;
+    cursor: pointer;
+    transition: cubic-bezier((0.4, 0, 0.2, 1)) 250ms;
+
+    &:hover,
+    :focus {
+        background-color: var(--brand-color);
+        color: var(--darkBG-header-color);
+        cursor: pointer;
+    }
 
 }

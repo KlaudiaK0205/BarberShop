@@ -1,0 +1,51 @@
+@media screen and (min-width: 1280px) {
+    .hero__right-side {
+        background-color: var(lightBG-header-color);
+        background-image: url(/src/images/desktop/hero/heroBg1_desktop@1x.jpg); 
+        background-repeat: no-repeat;
+    //   background-position: center;
+        background-size: auto;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .hero__right-side {
+    background-image: url(/src/images/desktop/hero/heroBg1_desktop@2x.jpg); 
+    }
+}
+
+.hero .container {
+    display: flex;
+}
+
+
+.hero__left-side {
+    width: 10%;
+}
+
+.hero__right-side {
+    width: 1085px;
+    height: 680px;
+}
+
+.hero .secondary-header {
+    padding-top: 184px;
+    color: var(--darkBG-title-color);
+}
+
+
+.description {
+    width: 363px;
+    color: var(--darkBG-title-color);
+
+}
+
+
+// &:first-child {
+//     content: "";
+//     width: 60px;
+//     height: 1px;
+//     color: var(--darkBG-title-color);
+// }

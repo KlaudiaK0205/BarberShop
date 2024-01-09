@@ -1,0 +1,71 @@
+.aboutUs .container {
+
+}
+.aboutUs {
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+
+.left-side {
+
+}
+.aboutUs__list {
+    display: flex;
+    
+}
+
+.aboutUs__item {
+
+    &:first-child {
+        padding-right: 30px;
+    }
+
+    &:last-child {
+        padding-right: 65px;
+
+    }
+    
+
+}
+
+.aboutUs-right-side {
+    width: 500px;
+    margin-right: 113px;
+
+}
+
+.aboutUs .secondary-header {
+    padding-top: 0;
+    padding-bottom: 20px;
+
+}
+
+.aboutUs .section-header {
+    font-size: 42px;
+    padding-bottom: 20px;
+
+}
+
+.undertitle {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--lightBG-title-color);
+    padding-top: 20;
+    padding-bottom: 20px;
+}
+    
+
+
+.description {
+
+}
+
+.aboutUs .regBtn {
+    margin: 0;
+    margin-top: 40px;
+}

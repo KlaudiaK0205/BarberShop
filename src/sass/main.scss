@@ -1,5 +1,17 @@
 @import './base/common';
+// @import './base/container';
+@import './base/sections';
 
-@import './utils/variables.scss';
+@import './components/main-headers';
+@import './components/undertitle+description';
+@import './components/regBtn';
+
+
 
 @import './layout/header';
+@import './layout/hero';
+@import './layout/aboutUs';
+
+
+
+@import './utils/variables.scss';

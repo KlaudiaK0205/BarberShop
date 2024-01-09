@@ -25,6 +25,10 @@ a {
     text-decoration: none;
     margin: 0;
     padding: 0;
+
+    // &:visited {
+    //     color: var(--darkBG-header-color);
+    // }
 }
 
 p {
@@ -42,4 +46,8 @@ img {
 
 .link {
     text-decoration: none;
+
+    &:visited {
+        color: var(--darkBG-header-color);
+    }
 }

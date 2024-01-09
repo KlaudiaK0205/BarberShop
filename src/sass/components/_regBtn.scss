@@ -1,0 +1,19 @@
+.regBtn {
+    font-family: var(--font-main);
+    font-size: 12px;
+    width: 160px;
+    height: 40px;
+    // color: var(--darkBG-header-color);
+    background-color: transparent;
+    border: 1px solid var(--brand-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: cubic-bezier((0.4, 0, 0.2, 1)) 250ms;
+
+    &:hover,
+    :focus {
+        background-color: var(--brand-color);
+        color: var(--darkBG-header-color);
+        cursor: pointer;
+    }
+}
